@@ -30,3 +30,8 @@ jobs:
 
     - name: Shut down services
       run: docker compose down
+
+
+def test_fail_on_purpose(self):
+        """This test is designed to fail."""
+        self.assertEqual(1, 0, "Intentional failure to test CI pipeline")
